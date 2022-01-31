@@ -65,15 +65,23 @@ $posts = [
     
 
 <!-- Stampare ogni data con i relativi post -->
-<h1>
+
+
     <?php
-        foreach ($posts as $datePost) {
-            foreach ($datePost as $post) {
-                echo $post;
-            }
+        // foreach ($posts as $key => $datePost) {
+        //     echo '<pre>'; print_r($key); echo '</pre>';
+        //         foreach ($datePost as $key => $title) {
+        //             echo '<pre>'; print_r($key); echo '</pre>';
+        //         }      
+            
+        // }
+
+        for ($i=0; $i < count($posts); $i++) { 
+            var_dump($posts[$i]['title']['']);
         }
+        
     ?>
-</h1>
+
 
 
 
