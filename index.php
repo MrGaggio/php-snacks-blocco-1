@@ -9,6 +9,30 @@
 // ## Snack 5
 // Prendere un paragrafo abbastanza lungo, contenente diverse frasi. Prendere il paragrafo e suddividerlo in tanti paragrafi. Ogni punto un nuovo paragrafo.
 
+// SNACK2
+
+// Passare come parametri GET name, mail e age 
+$name = $_GET['name'];
+$mail = $_GET['mail'];
+$age = $_GET['age'];
+
+
+// che name sia più lungo di 3 caratteri
+// che mail contenga un punto e una chiocciola
+// che age sia un numero
+
+if (strlen($name) > 3 ){
+
+} elseif (strpos($mail, '@') !== false && strpos($mail, '.') !== false) {
+
+} elseif (isnumeric($age) === true) {
+    //stampa accesso riuscito
+    $message = 'Accesso Riuscito';
+} else {
+    // stampa accesso non riuscito
+    $message = 'Accesso non Riuscito';
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -20,6 +44,8 @@
     <title>Document</title>
 </head>
 <body>
+
+    <?php echo $message ?>
     
 </body>
 </html>
