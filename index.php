@@ -23,9 +23,9 @@ $prova = '';
 
 if (strlen($name) > 3 ){
 
-} elseif (strpos($mail, '@') !== false && strpos($mail, '.') !== false) {
+} if (strpos($mail, '@') !== false && strpos($mail, '.') !== false) {
 
-} elseif (isnumeric($age) === true) {
+} if (isnumeric($age)) {
     //stampa accesso riuscito
     $message = 'Accesso Riuscito';
 } else {
@@ -45,7 +45,7 @@ if (strlen($name) > 3 ){
 </head>
 <body>
 
-    <?php echo $message; ?>
+    <!-- <?php echo $message; ?> -->
     
 </body>
 </html>
