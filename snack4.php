@@ -3,10 +3,13 @@
 
 
 $newArray = [];
+$i = 0;
+$max = 15;
 
-while($newArray < 15){
+while($i < count($max)){
     $number = rand(1, 20);
     !in_array($number, $newArray);
+    $i++;
 
 //     if (!in_array($number, $newArray)) {
 //         $newArray[] = $number;
