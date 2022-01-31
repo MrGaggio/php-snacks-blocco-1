@@ -21,17 +21,25 @@ $prova = '';
 // che mail contenga un punto e una chiocciola
 // che age sia un numero
 
-if (strlen($name) > 3 ){
+// if (strlen($name) > 3 ){
 
-} if (strpos($mail, '@') !== false && strpos($mail, '.') !== false) {
+// } if (strpos($mail, '@') !== false && strpos($mail, '.') !== false) {
 
-} if (is_numeric($age)) {
-    //stampa accesso riuscito
+// } if (is_numeric($age)) {
+//     //stampa accesso riuscito
+//     $message = 'Accesso Riuscito';
+// } else {
+//     // stampa accesso non riuscito
+//     $message = 'Accesso non Riuscito';
+// }
+
+
+if (strlen($name) > 3   && strpos($mail, '@') !== false && strpos($mail, '.') !== false && is_numeric($age)){
     $message = 'Accesso Riuscito';
-} else {
-    // stampa accesso non riuscito
+}else {
     $message = 'Accesso non Riuscito';
 }
+
 
 ?>
 
