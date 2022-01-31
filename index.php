@@ -15,7 +15,7 @@
 $name = $_GET['name'];
 $mail = $_GET['mail'];
 $age = $_GET['age'];
-
+$prova = '';
 
 // che name sia più lungo di 3 caratteri
 // che mail contenga un punto e una chiocciola
@@ -45,7 +45,7 @@ if (strlen($name) > 3 ){
 </head>
 <body>
 
-    <?php echo $message ?>
+    <?php echo $message; ?>
     
 </body>
 </html>
