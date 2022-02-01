@@ -68,22 +68,22 @@ $posts = [
 
 
     <?php
-        // foreach ($posts as $key => $datePost) {
-        //     echo '<pre>'; print_r($key); echo '</pre>';
-        //         foreach ($datePost as $key => $title) {
-        //             echo '<pre>'; print_r($key); echo '</pre>';
-        //         }      
-            
-        // }
-
-        for ($i=0; $i < count($posts); $i++) { 
-            var_dump($posts[$i]['title']['']);
+ 
+        foreach ($posts as $key => $valore) {
+            echo($key);
+            foreach ($valore as $post) {
+                echo("<h1>".$post['title']."</h1>");
+                echo("<p>".$post['text']."</p>");
+                echo("<i>".$post['author']."</i>");
+            }
         }
-        
+
+
     ?>
 
 
 
 
 </body>
+
 </html>
