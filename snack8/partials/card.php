@@ -1,8 +1,7 @@
 <div class="card">
-  <img src="<?php echo $card['poster']; ?>" />
+  <img src="<?php echo $card['immagine']; ?>" />
   <div class="content">
-    <h3><?php echo $card['title'] ?></h3>
-    <small><?php echo $card['author']; ?></small>
-    <strong><?php echo $card['year']; ?></strong>
+    <h3><?php echo $card['nome'] ?></h3>
+    <small><?php echo $card['prezzo']; ?></small>
   </div>
 </div>
